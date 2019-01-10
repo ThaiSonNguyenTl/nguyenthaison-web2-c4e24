@@ -6,9 +6,9 @@ mlab.connect()
 print("ex2")
 river_list = River.objects(continent__iexact = "Africa")
 for river in river_list:
-    print(river.continent)
+    print(river.name)
 
 print("ex3")
 river_list = River.objects(continent__iexact = "S. America" , length__lt = 1000)
 for river in river_list:
-    print(river.continent,river.length)
+    print(river.name,river.length)
